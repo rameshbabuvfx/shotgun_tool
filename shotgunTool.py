@@ -6,10 +6,13 @@ from PySide2.QtCore import *
 from PySide2.QtWidgets import *
 from shotgun_api3 import Shotgun
 
+from shotgun_UI import shotgunToolUI
 
-class Creator:
+
+class ShotgunLoader(QMainWindow, shotgunToolUI.Ui_MainWindow):
     def __init__(self):
         super().__init__()
+        self.setupUi(self)
 
         sg = Shotgun(
             "https://rock.shotgrid.autodesk.com/",
@@ -17,15 +20,14 @@ class Creator:
             "uoaboavygq4qlr_dicRunkxom"
         )
 
-        data = {
-            "project": {'type': 'Project', 'id': 122, 'name': 'Deamon'},
-            "entity": {'type': 'Shot', 'id': 1174},
-            "content": ""
-        }
-        for count, i in enumerate(range(30)):
-            data["content"] = f"sh_00{count+1}"
-            sg.create('Task', data=data)
+
+def main():
+    main.tool = ShotgunLoader()
+    main.tool.show()
 
 
 if __name__ == '__main__':
-    Creator()
+    app = QApplication()
+    loader = ShotgunLoader()
+    loader.show()
+    sys.exit(app.exec_())
