@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1201</width>
+    <width>1364</width>
     <height>799</height>
    </rect>
   </property>
@@ -43,7 +43,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="SearchlineEdit">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -74,7 +74,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_2">
+         <widget class="QLabel" name="ShotgunLabel">
           <property name="font">
            <font>
             <family>Microsoft Sans Serif</family>
@@ -107,7 +107,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_5">
         <item>
-         <widget class="QTableWidget" name="tableWidget">
+         <widget class="QTableWidget" name="TasktableWidget">
           <property name="minimumSize">
            <size>
             <width>711</width>
@@ -196,7 +196,7 @@ QScrollBar::handle{
            <bool>true</bool>
           </property>
           <property name="rowCount">
-           <number>4</number>
+           <number>1</number>
           </property>
           <attribute name="horizontalHeaderVisible">
            <bool>true</bool>
@@ -234,27 +234,7 @@ QScrollBar::handle{
           <attribute name="verticalHeaderStretchLastSection">
            <bool>false</bool>
           </attribute>
-          <row>
-           <property name="text">
-            <string>New Row</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>New Row</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>New Row</string>
-           </property>
-          </row>
           <row/>
-          <column>
-           <property name="text">
-            <string>S.No</string>
-           </property>
-          </column>
           <column>
            <property name="text">
             <string>Thumbnail</string>
@@ -287,7 +267,16 @@ QScrollBar::handle{
           </column>
           <item row="0" column="0">
            <property name="text">
-            <string>1</string>
+            <string/>
+           </property>
+           <property name="background">
+            <brush brushstyle="NoBrush">
+             <color alpha="255">
+              <red>200</red>
+              <green>25</green>
+              <blue>0</blue>
+             </color>
+            </brush>
            </property>
           </item>
           <item row="0" column="1">
@@ -297,107 +286,22 @@ QScrollBar::handle{
           </item>
           <item row="0" column="2">
            <property name="text">
-            <string>ttt</string>
+            <string/>
            </property>
           </item>
           <item row="0" column="3">
            <property name="text">
-            <string>tt</string>
+            <string/>
            </property>
           </item>
-          <item row="0" column="6">
+          <item row="0" column="4">
            <property name="text">
-            <string>tt</string>
+            <string/>
            </property>
           </item>
-          <item row="1" column="0">
+          <item row="0" column="5">
            <property name="text">
-            <string>2</string>
-           </property>
-          </item>
-          <item row="1" column="2">
-           <property name="text">
-            <string>tt</string>
-           </property>
-          </item>
-          <item row="1" column="3">
-           <property name="text">
-            <string>t</string>
-           </property>
-          </item>
-          <item row="1" column="4">
-           <property name="text">
-            <string>t</string>
-           </property>
-          </item>
-          <item row="1" column="5">
-           <property name="text">
-            <string>t</string>
-           </property>
-          </item>
-          <item row="2" column="0">
-           <property name="text">
-            <string>3</string>
-           </property>
-          </item>
-          <item row="2" column="2">
-           <property name="text">
-            <string>t</string>
-           </property>
-          </item>
-          <item row="2" column="3">
-           <property name="text">
-            <string>tt</string>
-           </property>
-          </item>
-          <item row="2" column="4">
-           <property name="text">
-            <string>tt</string>
-           </property>
-          </item>
-          <item row="2" column="5">
-           <property name="text">
-            <string>t</string>
-           </property>
-          </item>
-          <item row="2" column="6">
-           <property name="text">
-            <string>t</string>
-           </property>
-          </item>
-          <item row="3" column="0">
-           <property name="text">
-            <string>4</string>
-           </property>
-          </item>
-          <item row="3" column="1">
-           <property name="text">
-            <string>tt</string>
-           </property>
-          </item>
-          <item row="3" column="2">
-           <property name="text">
-            <string>tttjjh</string>
-           </property>
-          </item>
-          <item row="3" column="3">
-           <property name="text">
-            <string>jhvjhvj</string>
-           </property>
-          </item>
-          <item row="3" column="4">
-           <property name="text">
-            <string>jvjhvjh</string>
-           </property>
-          </item>
-          <item row="3" column="5">
-           <property name="text">
-            <string>kjkjkj</string>
-           </property>
-          </item>
-          <item row="3" column="6">
-           <property name="text">
-            <string>hhhjv</string>
+            <string/>
            </property>
           </item>
          </widget>
@@ -433,7 +337,7 @@ QScrollBar::handle{
             <number>0</number>
            </property>
            <item>
-            <widget class="QLabel" name="label">
+            <widget class="QLabel" name="ImageLabel">
              <property name="maximumSize">
               <size>
                <width>450</width>
@@ -460,23 +364,16 @@ QScrollBar::handle{
             </widget>
            </item>
            <item>
-            <widget class="QTreeWidget" name="treeWidget">
+            <widget class="QListWidget" name="TaskLoglistWidget">
              <property name="font">
               <font>
                <family>Calibri</family>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QTreeWidget{
+              <string notr="true">QListWidget{
 	background-color: rgb(30, 30, 30);
 	border-radius:10px;
-}
-
-QHeaderView:section {
-	background-color: rgb(0, 0, 0);
-    height:20px;                                
-    border: 0px solid;
-	border-radius:1px;
 }</string>
              </property>
              <property name="frameShape">
@@ -485,24 +382,6 @@ QHeaderView:section {
              <property name="frameShadow">
               <enum>QFrame::Plain</enum>
              </property>
-             <attribute name="headerVisible">
-              <bool>true</bool>
-             </attribute>
-             <column>
-              <property name="text">
-               <string>New Column</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>New Column</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>New Column</string>
-              </property>
-             </column>
             </widget>
            </item>
           </layout>
@@ -513,7 +392,7 @@ QHeaderView:section {
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="LoadTaskPushButton">
           <property name="minimumSize">
            <size>
             <width>300</width>
@@ -544,7 +423,7 @@ QPushButton:pressed{
 }</string>
           </property>
           <property name="text">
-           <string>PushButton</string>
+           <string>Load Task</string>
           </property>
          </widget>
         </item>
