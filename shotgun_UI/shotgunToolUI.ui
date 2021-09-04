@@ -117,7 +117,7 @@
           <property name="font">
            <font>
             <family>Microsoft Sans Serif</family>
-            <pointsize>10</pointsize>
+            <pointsize>8</pointsize>
             <weight>75</weight>
             <italic>false</italic>
             <bold>true</bold>
@@ -131,9 +131,10 @@
 	selection-background-color: rgb(91, 91, 91);
 	background-color: rgb(30, 30, 30);
 	alternate-background-color: rgb(18, 18, 18);
-	color: rgb(255, 255, 255);
+	color: rgb(198, 202, 208);
 	border-radius:10px;
 }
+
 QScrollBar:horizontal{
 	background-color: white;
 	height: 7px;
@@ -252,11 +253,6 @@ QScrollBar::handle{
           </column>
           <column>
            <property name="text">
-            <string>Descripton</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
             <string>Dead Line</string>
            </property>
           </column>
@@ -295,11 +291,6 @@ QScrollBar::handle{
            </property>
           </item>
           <item row="0" column="4">
-           <property name="text">
-            <string/>
-           </property>
-          </item>
-          <item row="0" column="5">
            <property name="text">
             <string/>
            </property>
